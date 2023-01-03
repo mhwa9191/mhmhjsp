@@ -7,12 +7,13 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import notice.controller.customer.NoticeController;
+import notice.controller.customer.NoticeDelProcController;
 import notice.controller.customer.NoticeDetailController;
 import notice.controller.customer.NoticeEditController;
 import notice.controller.customer.NoticeEditProcController;
 import notice.controller.customer.NoticeRegController;
-import notice.controller.customer.NoticeRegProcController0;
 import notice.controller.customer.NoticeRegProcController;
+
 
 public class MyDispatcher extends HttpServlet {
 			//배치자
@@ -51,6 +52,8 @@ public class MyDispatcher extends HttpServlet {
 				ncontroller=new NoticeRegProcController();
 			}else if(com.equals("/customer/notice.do")) {
 				ncontroller=new NoticeController();
+			}else if(com.equals("/customer/noticeDelProc.do")) {
+				ncontroller=new NoticeDelProcController();
 			}
 			ncontroller.excute(request, response);
 			

@@ -6,7 +6,7 @@
 
 <%
 //삭제후 notice.jsp 로 가기
-request.setCharacterEncoding("utf-8");
+/* request.setCharacterEncoding("utf-8");
 String num=request.getParameter("c");
 
 Notice n= new Notice();
@@ -18,6 +18,6 @@ int cnt=dao.delete(n);
 
 if (cnt>0){
 	response.sendRedirect("notice.jsp");
-}
+} */
 
 %>

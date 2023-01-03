@@ -23,7 +23,7 @@ public class NoticeRegProcController implements NController {
 		int cnt = dao.insert(n);
 		
 		if(cnt>0){
-			response.sendRedirect("notice.jsp");
+			response.sendRedirect("notice.do");
 		}
 // 화면전환시 가지고 갈것이 없으면 
 //		request.getRequestDispatcher("noticeReg.jsp").forward(request, response); 하지않고
