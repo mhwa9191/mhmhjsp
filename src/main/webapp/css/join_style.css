@@ -1,0 +1,18 @@
+/* 가운데 정렬 
+   margin-left: auto;
+   margin-right: auto; */
+
+#wrap{
+   width: 530px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+}
+table{
+   margin-left: auto;
+   margin-right: auto;
+   border: 3px solid skyblue;
+}
+td{
+   border: 1px solid skyblue;
+}
